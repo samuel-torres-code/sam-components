@@ -61,29 +61,7 @@ npm install /path/to/sam-components-0.1.0.tgz
 npm whoami
 
 # Publish (will run prepublishOnly script automatically)
-npm publish
-```
-
-### Option 2: Scoped Package (if name is taken)
-
-If you need to use a scoped package:
-
-1. Update `package.json`:
-   ```json
-   "name": "@yourusername/sam-components"
-   ```
-
-2. Publish as public (scoped packages are private by default):
-   ```bash
-   npm publish --access public
-   ```
-
-### Option 3: Private Package
-
-If you want to keep it private (requires paid npm account):
-
-```bash
-npm publish --access restricted
+npm publish --access public
 ```
 
 ## Version Management
@@ -111,33 +89,12 @@ npm publish
 
 3. **Update documentation** if needed
 
-## Troubleshooting
-
-### "Package name already exists"
-- Use a scoped package: `@yourusername/sam-components`
-- Choose a different name
-
-### "You must verify your email"
-- Check your email and verify your npm account
-
-### "Invalid package name"
-- Package names must be lowercase
-- Can contain hyphens and underscores
-- Cannot start with a dot or underscore
-
-### Build errors
-- Make sure all dependencies are installed: `npm install`
-- Check TypeScript errors: `npm run type-check`
-- Verify Vite config is correct
-
 ## Using Your Published Package
 
 Once published, others (and you) can install it:
 
 ```bash
-npm install sam-components
-# or
-npm install @yourusername/sam-components
+npm install @samuel-torres-code/sam-components
 ```
 
 Then use it:
@@ -153,8 +110,4 @@ import 'sam-components/styles.css';
 2. Update version: `npm version patch|minor|major`
 3. Build: `npm run build`
 4. Publish: `npm publish`
-
----
-
-Good luck with your first publish! 🚀
 
