@@ -1,5 +1,5 @@
 {
-  "name": "sam-components",
+  "name": "@samuel-torres-code/components",
   "version": "0.1.0",
   "description": "Universal JSX components for use in any JSX environment (Astro, React, Next.js, Eleventy, etc.)",
   "type": "module",
@@ -16,6 +16,7 @@
       "import": "./src/index.ts",
       "types": "./src/index.ts"
     },
+    "./styles.css": "./dist/styles.css",
     "./package.json": "./package.json"
   },
   "files": [
@@ -40,10 +41,22 @@
     "astro",
     "nextjs",
     "eleventy",
-    "universal"
+    "universal",
+    "retro",
+    "ascii",
+    "terminal",
+    "ui-components"
   ],
-  "author": "",
+  "author": "Samuel Torres <torres.sam2002@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samuel-torres-code/sam-components.git"
+  },
+  "bugs": {
+    "url": "https://github.com/samuel-torres-code/sam-components/issues"
+  },
+  "homepage": "https://github.com/samuel-torres-code/sam-components#readme",
   "peerDependencies": {
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"
   },

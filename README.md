@@ -18,7 +18,7 @@ pnpm add sam-components
 
 ```tsx
 import { Button } from 'sam-components';
-import 'sam-components/dist/styles.css'; // Import component styles
+import 'sam-components/styles.css'; // Import component styles
 
 function App() {
   return (
@@ -34,7 +34,7 @@ function App() {
 ```astro
 ---
 import { Button } from 'sam-components';
-import 'sam-components/dist/styles.css';
+import 'sam-components/styles.css';
 ---
 
 <Button variant="primary" size="lg" client:load>
